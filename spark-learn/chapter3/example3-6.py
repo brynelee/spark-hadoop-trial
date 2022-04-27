@@ -1,8 +1,8 @@
-import os
-os.environ['SPARK_HOME'] = "/usr/local/src/spark"
-os.environ['HADOOP_HOME'] = "/usr/local/src/hadoop"
-os.environ['PYSPARK_PYTHON'] = "/home/hadoop/anaconda3/envs/pyspark/bin/python"
-os.environ['PYSPARK_DRIVER_PYTHON'] = "/home/hadoop/anaconda3/envs/pyspark/bin/python"
+# import os
+# os.environ['SPARK_HOME'] = "/usr/local/src/spark"
+# os.environ['HADOOP_HOME'] = "/usr/local/src/hadoop"
+# os.environ['PYSPARK_PYTHON'] = "/home/hadoop/anaconda3/envs/pyspark/bin/python"
+# os.environ['PYSPARK_DRIVER_PYTHON'] = "/home/hadoop/anaconda3/envs/pyspark/bin/python"
 
 from pyspark.sql.types import *
 from pyspark.sql import SparkSession
@@ -12,7 +12,7 @@ from pyspark.sql.functions import *
 schema = StructType([
    StructField("Id", IntegerType(), False),
    StructField("First", StringType(), False),
-   StructField("Last", StringType(), False),
+   StructField("La/Users/xiaodong/GitRoot/spark-hadoop-trial/sparktest.pyst", StringType(), False),
    StructField("Url", StringType(), False),
    StructField("Published", StringType(), False),
    StructField("Hits", IntegerType(), False),
