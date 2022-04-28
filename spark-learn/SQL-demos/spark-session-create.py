@@ -7,7 +7,7 @@ if __name__ == '__main__':
     # 构建SparkSession执行环境入口对象
     spark = SparkSession.builder.\
         appName("test").\
-        master("local[*]").\
+        master("yarn").\
         getOrCreate()
 
     # 通过SparkSession对象 获取 SparkContext对象
