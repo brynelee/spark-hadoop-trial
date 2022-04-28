@@ -3,7 +3,8 @@
 from pyspark import SparkConf, SparkContext
 
 if __name__ == '__main__':
-    conf = SparkConf().setAppName("test").setMaster("local[*]")
+    #conf = SparkConf().setAppName("test").setMaster("local[*]")
+    conf = SparkConf().setAppName("test").setMaster("yarn")
     sc = SparkContext(conf=conf)
 
     # 1. 读取文件获取数据 构建RDD
