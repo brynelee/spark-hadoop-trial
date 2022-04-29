@@ -6,7 +6,8 @@ from pyspark.storagelevel import StorageLevel
 import re
 
 if __name__ == '__main__':
-    conf = SparkConf().setAppName("test").setMaster("spark://spark-master:7077")
+    # conf = SparkConf().setAppName("test").setMaster("spark://spark-master:7077")
+    conf = SparkConf().setAppName("test").setMaster("yarn")
     sc = SparkContext(conf=conf)
 
     # 1. 读取数据文件
